@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITF WEB 2</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <script>
+        function display(){
+            document.getElementById("myusername").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+
+        function setImage(){
+            document.getElementById("profile").style.backgroundImage = "url(" + document.getElementById("img-url").value + ")";
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="flex-top">
+            <div>
+                <div class="flex-item1">
+                    <!-- Avatar-->
+                    <div class="notification"><p>1</p></div>
+                    <div class="avatar" id="profile"></div>
+                </div>
+                <div>
+                    <a href="https://youtu.be/zwtMZ4l9t4s?si=RQeB4xlGEGDxe-io" class="on-hover">
+                    <p style="font-size: 20px;" id="myusername">Username, Gallery</p>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-item2">
+                <!-- Input-->
+                <div><p>Username</label><input type="text" id="username" style="margin-left: 5px;"><button style="margin-left: 5px;" onclick="display()">set</button></div>
+                <div><p>Image URL</label><input type="text" id="img-url" style="margin-left: 5px;"><button style="margin-left: 5px;" onclick="setImage()">set</button></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item" style="grid-column: span 2/ span 2; background-image: url(https://wowxwow.com/wp-content/uploads/2018/02/xsullo-eyesee.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://lh3.googleusercontent.com/ci/ALr3YSFzPZ7rknazzBO19apvQccGdEg0EABjOm3i4a3D_Jt2L2oEJgYyQH5snpWJ727NnQIod_z03Q);"></div>
+            <div class="gallery-item" style="background-image: url(https://cdn.thecollector.com/wp-content/uploads/2019/11/Edvard-Munch-portrait-with-scream.jpg?width=1400&quality=70);"></div>
+            <div class="gallery-item" style="grid-column: span 2/ span 2; background-image: url(https://149358827.v2.pressablecdn.com/wp-content/uploads/2019/04/Mrs-M%E2%80%99Guinness.Memory-Palace-Guli-acrylic-on-canvas-50x-50cm-2019Niamh-Cunningham-copy-1024x1018.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://images.theconversation.com/files/296052/original/file-20191008-128681-ngzwqb.jpg?ixlib=rb-1.1.0&rect=15%2C20%2C929%2C926&q=45&auto=format&w=1000&fit=clip);"></div>
+            <div class="gallery-item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2J6GbFqDYeXB889JbcluwKQw3wYtJakL1Ug&usqp=CAU);"></div>
+            <div class="gallery-item" style="background-image: url(https://dza2a2ql7zktf.cloudfront.net/binaries-cdn/dqzqcuqf9/image/fetch/ar_16:10,q_auto,dpr_3.0,c_fill,f_auto,w_412/https://d2u3kfwd92fzu7.cloudfront.net/asset/cms/Frame_1__3_.jpg);"></div>
+        </div>
+    </div>
+</body>
+</html>
+
